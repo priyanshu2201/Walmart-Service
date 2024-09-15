@@ -37,10 +37,9 @@ public class AuthenticationController {
 
 		return flag;
 	}
-	
+
 	@PostMapping("/checkUserEmailId")
-	public String checkUserEmailId(@RequestBody  String email) {
-		System.out.println("dddddddddddddddddd:"+email);
+	public String checkUserEmailId(@RequestBody String email) {
 		return authenticationService.checkEmailId(email);
 	}
 }
