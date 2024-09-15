@@ -33,7 +33,6 @@ public class AuthenticationController {
 
 	@PostMapping("/loginUser")
 	public Boolean checkUserLogin(@RequestBody Login login) {
-		System.out.println("8**********");
 		boolean flag = authenticationService.checkUserLogin(login);
 
 		return flag;
